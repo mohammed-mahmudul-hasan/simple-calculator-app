@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editinput"
+        android:background="@drawable/border"
+        android:inputType="numberDecimal"
+        android:cursorVisible="false"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+       android:layout_marginTop="7dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:textSize="30sp"
+        android:gravity="center_vertical"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnC"
+            style="@style/FunctionalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="10dp"
+            android:text="AC" />
+
+        <Button
+            android:id="@+id/btnPow2"
+            style="@style/FunctionalButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="x²" />
+
+        <Button
+            android:id="@+id/btnRoot"
+            style="@style/FunctionalButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="@string/root" />
+
+        <Button
+            android:id="@+id/btnFactorial"
+            style="@style/FunctionalButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="x !"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSin"
+            style="@style/FunctionalButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="10dp"
+            android:text="sin"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnCos"
+            style="@style/FunctionalButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="cos"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnTan"
+            style="@style/FunctionalButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="tan"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnDiv"
+            style="@style/FunctionalButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="÷" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="10dp"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnMul"
+            style="@style/FunctionalButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="×" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="10dp"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnSub"
+            style="@style/FunctionalButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="10dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/FunctionalButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/NumberButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="10dp"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn00"
+            style="@style/NumberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="00" />
+        <Button
+            android:id="@+id/btnEqual"
+            style="@style/EqualButton"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="=" />
+
+    </LinearLayout>
+
+</LinearLayout>
